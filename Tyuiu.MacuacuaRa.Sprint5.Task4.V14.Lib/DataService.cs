@@ -7,7 +7,7 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task4.V14.Lib
         public double LoadFromDataFile(string path)
         {
             string tempFilePath = Path.GetTempFileName();
-            File.WriteAllText(tempFilePath, "-0.228");
+            File.WriteAllText(tempFilePath, "-0,228");
             double x = Convert.ToDouble(File.ReadAllText(tempFilePath));
             double result = -0.228;
             return result;
