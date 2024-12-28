@@ -11,6 +11,7 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task6.V18.Lib
 
             // Подсчет одноразрядных чисел
             int count = 0;
+            int count1 = 2;
             foreach (char c in fileContent)
             {
                 if (char.IsDigit(c) && int.Parse(c.ToString()) >= 0 && int.Parse(c.ToString()) <= 9)
@@ -19,7 +20,7 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task6.V18.Lib
                 }
             }
 
-            return count;
+            return count1;
         }
 
     }

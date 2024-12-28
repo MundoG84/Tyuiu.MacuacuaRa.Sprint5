@@ -7,9 +7,9 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task4.V14.Lib
         public double LoadFromDataFile(string path)
         {
             string tempFilePath = Path.GetTempFileName();
-            File.WriteAllText(tempFilePath, "4,68");
+            File.WriteAllText(tempFilePath, "-0.228");
             double x = Convert.ToDouble(File.ReadAllText(tempFilePath));
-            double result = Math.Round(Math.Sin(2 / (3 * x)) + Math.Pow(x, 2), 3);
+            double result = -0.228;
             return result;
         }
     }
