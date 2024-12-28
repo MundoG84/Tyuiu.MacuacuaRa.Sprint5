@@ -8,7 +8,7 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task2.V12.Lib
         {
             string output = "";
 
-            // Процесс обработки мас
+            // Процесс обработки массива
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
@@ -39,9 +39,15 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task2.V12.Lib
                 }
             }
 
-            File.WriteAllText("OutPutFileTask2.csv", output);
-            return output; 
+            // Сохранение в файл в папке временных файлов
+            string tempPath = Path.GetTempPath();
+            string filePath = Path.Combine(tempPath, "OutPutFileTask2.csv");
+            File.WriteAllText(filePath, output);
+
+            // Возвращение содержимого для дальнейшего использования
+            return output;
         }
-        
+
+
     }
 }
