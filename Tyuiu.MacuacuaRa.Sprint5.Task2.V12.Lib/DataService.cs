@@ -39,13 +39,9 @@ namespace Tyuiu.MacuacuaRa.Sprint5.Task2.V12.Lib
                 }
             }
 
-            // Сохранение результата в файл
             File.WriteAllText("OutPutFileTask2.csv", output);
-
-            // Вывод результата на консоль
-            Console.WriteLine(output);
-
-            return output;
+            return output; 
         }
+        
     }
 }
